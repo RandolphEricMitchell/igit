@@ -3,6 +3,9 @@
 # ~~~~
 
 GET     /                           controllers.MainController.index()
+GET     /dashboard                  controllers.DashboardController.index()
+GET     /my-apps                    controllers.MainController.index()
+GET     /app-development            controllers.AppDevelopmentController.index()
 GET     /message                    controllers.MessageController.getMessage()
 GET     /assets/javascripts/routes  controllers.MessageController.javascriptRoutes()
 
