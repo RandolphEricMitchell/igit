@@ -3,10 +3,7 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.MainController.index()
-GET     /dashboard                  controllers.DashboardController.index()
-GET     /my-apps                    controllers.MainController.index()
-GET     /app-development            controllers.AppDevelopmentController.index()
+GET     /                           controllers.HomeController.index
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code

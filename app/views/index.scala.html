@@ -1,13 +1,20 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
 @(message: String)
 
-@main("Welcome to Play Framework") {
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
 
-    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.min.js")'></script>
-    
-    <div class="well">
-        <h1>@message</h1>
-    </div>
-
-    <button id="getMessageButton">Get JSON Message</button>
+    @*
+     * Get an `Html` object by calling the built-in Play welcome
+     * template and passing a `String` message.
+     *@
+    @play20.welcome(message, style = "Scala")
 
 }
